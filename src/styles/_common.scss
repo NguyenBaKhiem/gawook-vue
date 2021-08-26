@@ -1,0 +1,64 @@
+body::before {
+  display: none;
+  content: "desktop";
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body::before {
+    content: "tablet"; 
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  body::before {
+    content: "mobile"; 
+  } 
+}
+.w-100 {
+	width: 100%;
+}
+.f-l {
+	float: left;
+}
+.f-r {
+	float: right;
+}
+.p-0 {
+	padding: 0 !important;
+}
+.m-0 {
+	margin: 0 !important;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.d-f {
+	display: flex;
+}
+.d-n {
+	display: none;
+}
+.d-i {
+	display: inline;
+}
+.overflow-x-visible {
+	overflow-x: visible;
+}
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+.overflow-y-visible {
+	overflow-y: visible;
+}
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
+.el-tooltip__popper.is-light {
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,.15);
+	border: 1px solid #d4d7dc;
+	&[x-placement^=right] {
+		.popper__arrow {
+			border-right-color: #f4f4f4;
+		}
+	}
+}

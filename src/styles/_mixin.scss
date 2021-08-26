@@ -1,0 +1,63 @@
+@mixin translate($x,$y){
+  -webkit-transform: translate($x,$y);
+  -moz-transform: translate($x,$y);
+  -o-transform: translate($x,$y);
+  transform: translate($x,$y);
+}
+/* --@Animation */
+@mixin animation($parameter){
+  -webkit-animation: $parameter;
+  -moz-animation: $parameter;
+  -o-animation: $parameter;
+  animation: $parameter;
+}
+/* --@Animation-Delay */
+@mixin animation-delay($value){
+  -webkit-animation-delay: $value;
+  -moz-animation-delay: $value;
+  -o-animation-delay: $value;
+  animation-delay: $value;
+}
+/* --@Animation-Deuration */
+@mixin animation-duration($value){
+  -webkit-animation-duration: $value;
+  -moz-animation-duration: $value;
+  -o-animation-duration: $value;
+  animation-duration: $value;
+}
+/* --@Transition*/
+@mixin transition($parameter){
+  -webkit-transition: $parameter;
+  -moz-transition: $parameter;
+  -o-transition: $parameter;
+  transition: $parameter;
+}
+/* --@Scale */
+@mixin scale($value){
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  -o-transform: scale($value);
+  transform: scale($value);
+}
+/* --@Shadow */
+@mixin shadow($value){
+  -webkit-box-shadow: $value;
+  -moz-box-shadow:    $value;
+  box-shadow:         $value;
+}
+
+@mixin full-width-calc($minus) {
+  width: calc(100% - #{$minus});
+}
+@mixin icon-color($color) {
+  &:before {
+    color: $color;
+  }
+}
+
+@mixin margin-list ($value) {
+  margin-right: $value;
+  &:last-child {
+    margin-right: 0;
+  }
+}

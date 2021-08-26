@@ -1,0 +1,23 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+// Variables
+@import 'variables';
+@import 'common';
+@import 'icomoon';
+
+body {
+	font-family: $font-family-root-sans-serif;
+	font-size: $font-size-root;
+}
+
+.emoji {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	display: inline-block;
+	background-size: cover;
+	&:not(:first-child) {
+		margin-left: 1px;
+	}
+}
